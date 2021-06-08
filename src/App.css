@@ -3,13 +3,21 @@
 :root {
   --primary-white: #fff;
   --primary-orange: #f9ab00;
-  --primary-dark:rgba(255,255,255,0)
+  --primary-dark:rgba(255,255,255,0);
+  --primary-red: #ef4035;
+  --primary-hover-red: #f33501;
+
+
 }
 
 body{
-  font-family: "Roboto Condensed" sans-serif;
+  font-family: "Roboto Condensed" , sans-serif;
 }
 /******Navbar****/
+nav{
+  z-index: 2;
+}
+
 .logo{
   width:16.25rem;
 }
@@ -39,4 +47,174 @@ nav ul li{
 }
 .navbar-nav > li > a:hover{
   border-top: 0.1875rem solid var(--primary-orange);
+}
+
+/******header****/
+.header-wraper{
+  position:relative;
+  background: url(/home/amira/Desktop/myweb/myweb/src/Me.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  }
+
+.main-info{
+  display:flex;
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  text-align:center;
+  font-family: "Roboto Condensed" ,sans-serif;
+  z-index:1;
+  
+}
+.main-info h1{
+  color: var(--primary-orange);
+  text-transform: uppercase;
+}
+
+/*******Typed****/
+.typed-text{
+  font-size: 2rem;
+  color: rgb(24, 24, 182);
+}
+
+/*****Header main offer button****/
+.btn-main-offer{
+  border: 1px solid var(--primary-red);
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: blue;
+      margin: 2rem;
+}
+.btn-main-offer:hover{
+  text-decoration: none;
+  background-color: var(--primary-hover-red);
+  transition: .2s ease-in-out;
+}
+
+/*****particles***/
+.tsparticles-canvas-el{
+  position: absolute;
+  height: 100vh;
+  width: 50vw;
+  z-index: 1;
+
+}
+/*****contact****/
+.form {
+  background: #fff;
+  box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
+  border-radius: 5px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  left: 0;
+  right: 0;
+  position: absolute;
+  border-top: 5px solid #0e3721;
+/*   z-index: 1; */
+  animation: bounce 1.5s infinite;
+}
+::-webkit-input-placeholder {
+  font-size: 1.3em;
+}
+.title{
+  display: block;
+  font-family: sans-serif;
+  margin: 10px auto 5px;
+  width: 300px;
+}
+.pageTitle{
+  font-size: 2em;
+  font-weight: bold;
+}
+.secondaryTitle{
+  color: grey;
+}
+.name {
+  background-color: #ebebeb;
+  color:black;
+}
+.name:hover {
+  border-bottom: 5px solid #0e3721;
+  height: 30px;
+  width: 380px;
+  transition: ease 0.5s;
+}
+
+.email {
+  background-color: #ebebeb;
+  height: 2em;
+  color: black;
+}
+
+.email:hover {
+  border-bottom: 5px solid #0e3721;
+  height: 30px;
+  width: 380px;
+  transition: ease 0.5s;
+}
+
+.message {
+  background-color: #ebebeb;
+  overflow: hidden;
+  height: 10rem;
+  color:black;
+}
+
+.message:hover {
+  border-bottom: 5px solid #0e3721;
+  height: 12em;
+  width: 380px;
+  transition: ease 0.5s;
+}
+.formEntry {
+  display: block;
+  margin: 30px auto;
+  min-width: 200px;
+  padding: 10px;
+  border-radius: 2px;
+  border: none;
+  transition: all 0.5s ease 0s;
+}
+
+.submit {
+  width: 200px;
+  color: white;
+  background-color: #0e3721;
+  font-size: 20px;
+}
+
+.submit:hover {
+  box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
+  transform: translateY(-3px);
+  width: 300px;
+  border-top: 5px solid #0e3750;
+  border-radius: 0%;
+}
+
+@keyframes bounce {
+  0% {
+    tranform: translate(0, 4px);
+  }
+  50% {
+    transform: translate(0, 8px);
+  }
+} 
+/****About***/
+.intro{
+  color:black;
+  margin-top: 20%;
+  margin-left: 20%;
+  margin-bottom: 20%;
+  margin-right: 20%;
 }
